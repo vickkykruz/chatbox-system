@@ -11,4 +11,4 @@ def chatBrandBox(question, bard=bard):
 demo = gr.Interface(fn=chatBrandBox, inputs="text", outputs="text", title="An AI ChatBox System",
                     description="Hey Victor. This program collects whatever qusetion you want to ask then gives out an output to that question\
                         immdiatey", theme=gr.themes.Default(font=[gr.themes.GoogleFont("Inconsolata"), "Arial", "sans-serif"]))
-demo.launch()
+demo.launch(share=True)
